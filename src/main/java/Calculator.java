@@ -6,7 +6,7 @@
  */
 
 public class Calculator {
-    public int compute(int num1, int num2, char c) {
+    public int compute(int num1, int num2, String c) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Computable compute = ComputeFactory.getCompute(c);
         return compute.compute(num1, num2);
     }
